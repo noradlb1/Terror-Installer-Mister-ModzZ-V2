@@ -1,0 +1,4 @@
+C:\Users\MONSTERMC\Downloads\New folde2r\Terror Installer\obj\x64\Debug\Terror Installer.csproj.AssemblyReference.cache
+C:\Users\MONSTERMC\Downloads\New folde2r\Terror Installer\obj\x64\Debug\Terror Installer.Properties.Resources.resources
+C:\Users\MONSTERMC\Downloads\New folde2r\Terror Installer\obj\x64\Debug\Terror Installer.csproj.GenerateResource.cache
+C:\Users\MONSTERMC\Downloads\New folde2r\Terror Installer\obj\x64\Debug\Terror Installer.csproj.CoreCompileInputs.cache

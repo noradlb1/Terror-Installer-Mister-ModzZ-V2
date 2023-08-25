@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{7B8BB073-A9A2-4728-B63C-FE329F9FD798}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Terror Installer</RootNamespace>
+    <AssemblyName>Terror Installer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Terror Installer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="ConfusedByAttribute.cs" />
+    <Compile Include="Encrypt.cs" />
+    <Compile Include="Helper\KeyHelper.cs" />
+    <Compile Include="MisterModzZ\Captcha_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisterModzZ\Captcha_Menu_Form.Designer.cs">
+      <DependentUpon>Captcha_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MisterModzZ\Forgot_Password_Verify_First_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisterModzZ\Forgot_Password_Verify_First_Menu_Form.Designer.cs">
+      <DependentUpon>Forgot_Password_Verify_First_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MisterModzZ\Injector\DllInjectionResult.cs" />
+    <Compile Include="MisterModzZ\Injector\Injection.cs" />
+    <Compile Include="MisterModzZ\Login_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisterModzZ\Login_Menu_Form.Designer.cs">
+      <DependentUpon>Login_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MisterModzZ\Main_Menu_User_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MisterModzZ\Program.cs" />
+    <Compile Include="MisterModzZ\Programm_Busy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisterModzZ\Programm_Busy.Designer.cs">
+      <DependentUpon>Programm_Busy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MisterModzZ\Properties\Resources.cs" />
+    <Compile Include="MisterModzZ\Properties\Settings.cs" />
+    <Compile Include="MisterModzZ\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MisterModzZ\Register_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisterModzZ\Register_Menu_Form.Designer.cs">
+      <DependentUpon>Register_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MisterModzZ\User_Main_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisterModzZ\User_Main_Menu_Form.Designer.cs">
+      <DependentUpon>User_Main_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MisterModzZ\Captcha_Menu_Form.resources" />
+    <EmbeddedResource Include="MisterModzZ\Forgot_Password_Verify_First_Menu_Form.resources" />
+    <EmbeddedResource Include="MisterModzZ\Login_Menu_Form.resources" />
+    <EmbeddedResource Include="MisterModzZ\Main_Menu_User_Control.resources" />
+    <EmbeddedResource Include="MisterModzZ\Programm_Busy.resources" />
+    <EmbeddedResource Include="MisterModzZ\Properties\Resources.resources" />
+    <EmbeddedResource Include="MisterModzZ\Register_Menu_Form.resources" />
+    <EmbeddedResource Include="MisterModzZ\User_Main_Menu_Form.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="MisterModzZ\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\button1.Image" />
+    <None Include="Resources\button3.Image" />
+    <None Include="Resources\CheatMenuButton.Image" />
+    <None Include="Resources\ExitButton.Image" />
+    <None Include="Resources\LogoPictureBox.Image" />
+    <None Include="Resources\LogOutButton.Image" />
+    <None Include="Resources\MainMenuButton.Image" />
+    <None Include="Resources\MinimizeButton.Image" />
+    <None Include="Resources\pictureBox1.Image" />
+    <None Include="Resources\SettingsButton.Image" />
+    <None Include="Resources\StatsButton.Image" />
+    <None Include="Resources\UsersButton.Image" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
